@@ -60,6 +60,17 @@ int main(int argc, char *argv[]){
   for( auto k : list_string)
     qDebug() << k << endl;
 
+  //有Cpp风格迭代器
+    //QList<T>::iterator,QList<T>::const_iterator
+
+  //QVector是一个动态数组，可以自动扩展大小，用于存储同类型的元素。QVector提供了方便的数组访问和修改方法，以及支持STL容器算法的接口。
+  //QVector在需要频繁进行元素插入或删除操作时，性能可能不如QList，因为QVector需要重新分配内存，而QList只需要更新指针。
+  //QVector的默认构造函数创建一个空的向量，大小为0，如果需要在创建时指定向量大小，可以使用构造函数QVector(int size)。
+  //在使用QVector时，如果需要获取向量的元素个数，应该使用size()方法，而不是count()方法，因为size()方法的时间复杂度是O(1)，
+    //而count()方法的时间复杂度是O(n)。
+  //在使用QVector的迭代器时，应该使用const_iterator来保证迭代器只读访问，以避免意外的修改。
+  //当QVector存储的元素是自定义的对象时，需要重载对象的拷贝构造函数和析构函数，以确保对象在插入和删除时被正确地构造和销毁。
+
   return a.exec();
 
 }
