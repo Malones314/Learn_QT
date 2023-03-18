@@ -80,10 +80,13 @@ int main(int argc, char *argv[]){
 
   /*QMap QHash*/
   //底层使用红黑树实现，和QHash功能类似，只不过QHash底层使用hashtable实现，查找时QHash速度更快，QMap内元素内容不可重复，
+  //若相同键值，则后添加的会覆盖前面的。
   //QHash的键类型Key必须提供operator==()和qHash(Key)函数，而QMap的键类型Key必须提供operator<()函数
   //同样有Cpp风格迭代器
   //QHash<T>::iterator,QHash<T>::const_iterator
-
+  QMap<int, int> imap;
+  imap[1] = 2;
+  imap[1] = 3;  //覆盖imap[1] = 2
 
 
   return a.exec();
