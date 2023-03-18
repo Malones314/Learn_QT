@@ -79,7 +79,7 @@ int main(int argc, char *argv[]){
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   /*QMap QHash*/
-  //底层使用红黑树实现，和QHash功能类似，只不过QHash底层使用hashtable实现，查找时QHash速度更快，
+  //底层使用红黑树实现，和QHash功能类似，只不过QHash底层使用hashtable实现，查找时QHash速度更快，QMap内元素内容不可重复，
   //QHash的键类型Key必须提供operator==()和qHash(Key)函数，而QMap的键类型Key必须提供operator<()函数
   //同样有Cpp风格迭代器
   //QHash<T>::iterator,QHash<T>::const_iterator
