@@ -7,6 +7,7 @@
 #include <QLabel>
 #include <QMainWindow>
 #include <QStatusBar>
+#include <QDebug>
 
 //input widgets 包含如下组件
 #include <QComboBox>      //QComboBox：组合框
@@ -82,6 +83,55 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+////QLineEdit实例：
+
+//int main(int argc, char *argv[]){
+//    QApplication app(argc, argv);
+
+//    QWidget window;
+
+//    QVBoxLayout *layout = new QVBoxLayout(&window); // 创建布局管理器对象，为window的子对象
+          //确定子控件的位置：使用QVBoxLayout可以很方便地确定子控件的位置和大小，以便在窗口中正确地布局子控件。
+          //动态调整布局：当添加、删除或者调整子控件的大小时，QVBoxLayout会自动调整窗口中子控件的位置，以保持窗口布局的整洁。
+          //支持嵌套布局：QVBoxLayout可以与其他布局管理器结合使用，实现复杂的窗口布局，从而实现灵活的窗口设计。
+          //自动调整大小：当子控件大小发生变化时，QVBoxLayout会自动调整窗口大小，以保持窗口布局的整洁。
+
+//    QLineEdit *lineEdit = new QLineEdit(&window); // 创建单行文本框对象，为window的子对象
+
+//    layout->addWidget(lineEdit);  // 将单行文本框对象添加到布局管理器中
+
+//    window.setLayout(layout); // 设置窗口对象的布局管理器为上面创建的布局管理器
+
+//    window.setWindowTitle("QLineEdit Example"); // 设置窗口标题
+//    window.show();
+
+//    return app.exec();
+//}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////QPlainTextEdit实例：
+
+//int main( int argc, char* argv[]){
+//  QApplication app( argc, argv);
+
+//  QPlainTextEdit textEdit;
+//  textEdit.setPlainText("This is a sample text.\nhello\nhello");  // 设置文本内容
+
+//  textEdit.show();
+
+//  return app.exec();
+//}
+
+////QPlainTextEdit和QLineEdit的区别
+
+//1. 输入内容的类型不同： QLineEdit 只能输入单行文本，而 QPlainTextEdit 可以输入多行文本。
+//2. 大小和外观不同： QLineEdit 通常比 QPlainTextEdit 更小，只能显示一行文本，
+//   而 QPlainTextEdit 更大，可以显示多行文本。此外，它们的外观也不同：QLineEdit 通常只有一条线作为边框，而 QPlainTextEdit 通常具有多行边框和滚动条。
+//3. 支持的操作不同： QLineEdit 支持一些基本操作，如剪切、复制、粘贴等，而 QPlainTextEdit 支持更多的操作，如查找、替换、插入图片等。
+//4. 性能不同： 由于 QPlainTextEdit 可以显示大量的文本，因此在处理大量文本时，QPlainTextEdit 的性能可能会比 QLineEdit 更好。
+//如果需要输入单行文本，可以使用 QLineEdit，如果需要输入多行文本，可以使用 QPlainTextEdit
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -104,5 +154,4 @@
 //    return app.exec();
 //}
 
-//int main(int argc, char *argv[]) {
-//}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
