@@ -7,7 +7,7 @@ int main( int argc, char* argv[]){
 
   QLabel label(" Hello world"); //创建Qlabel对象实例,赋值Hello world
                                 //在label上显示文本
-  label.show(); //显示label内容
+  label.show(); //显示label内容,show()：以顶层的方式显示
 
   return app.exec();  //开启事件循环
 }
