@@ -9,7 +9,7 @@ QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
-  Q_OBJECT
+  Q_OBJECT  //支持Qt中的信号和槽机制
 
 public:
   MainWindow(QWidget *parent = nullptr);
