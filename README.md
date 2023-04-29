@@ -56,7 +56,7 @@ for (int i = 0; i < byteArray.size(); i++) {
 }
 
 ```
-### 在ui设计中把sizePolicy中的策略：
+### 在ui设计中sizePolicy中的策略：
 #### 1.Ignore：
 指定的控件在布局中忽略它的大小。
 #### 2.Fixed：
